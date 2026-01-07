@@ -1,0 +1,96 @@
+/* =========================
+   BLOCO INTRO / HERO
+   ========================= */
+.intro {
+  min-height: 60vh;                /* dá presença visual */
+  display: flex;
+  align-items: center;             /* centraliza verticalmente */
+  justify-content: center;         /* centraliza horizontalmente */
+
+  padding: 80px 24px;
+  text-align: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.6)
+  );
+}
+
+/* CONTEÚDO DA HERO */
+.intro-content {
+  max-width: 900px;
+}
+
+/* TÍTULO */
+.intro h1 {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+/* SUBTEXTO */
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* 
+   SEÇÃO DE EVENTOS
+========================= */
+.events-section {
+  /* Permite grid mais largo em telas grandes */
+  max-width: 1600px;
+
+  /* Centraliza a seção */
+  margin: 0 auto;
+
+  /* Espaçamento interno:
+     - topo
+     - laterais
+     - base maior para respiro visual */
+  padding: 32px 24px 80px;
+}
+
+/* =========================
+   GRID DE EVENTOS
+   ========================= */
+.events-grid {
+  /* Ativa layout em grid */
+  display: grid;
+
+  /* Mobile-first:
+     1 coluna por padrão */
+  grid-template-columns: 1fr;
+
+  /* Espaço entre os cards */
+  gap: 24px;
+}
+
+/* =========================
+   BREAKPOINT TABLET
+   ========================= */
+@media (min-width: 768px) {
+  .events-grid {
+    /* Em tablets:
+       2 colunas iguais */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   BREAKPOINT DESKTOP
+   ========================= */
+@media (min-width: 1024px) {
+  .events-grid {
+    /* Em desktop:
+       3 colunas iguais */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
