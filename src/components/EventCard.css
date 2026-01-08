@@ -1,0 +1,99 @@
+.event-card {
+  position: relative;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* BADGE */
+.event-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #f5b400;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* AVALIAÇÃO */
+.event-rating {
+  font-size: 1.2rem;
+  color: #f5b400;
+  margin: 5px;
+}
+
+.event-rating span {
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+
+.event-title {
+  font-size: 1.5rem;   /* maior */
+  font-weight: 600;
+  margin: 6px 2 10px;
+  line-height: 1.3;
+  margin-left: 5px;
+}
+
+/* PREÇOS */
+.event-price {
+  display: flex;
+  font-size: 1.35rem;
+  font-weight: 700;
+  gap: 8px;
+  align-items: center;
+  margin: 12px 0;
+  margin-left: 5px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.current-price {
+  color: #f07b37;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* BOTÃO */
+.event-buy-button {
+  margin: 20px auto 0;
+  display: block;
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border: 2px solid var (--text-primary);
+  border-radius: 10px;
+  background-color: #f07b37;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Wrapper da imagem */
+.event-card-image-wrapper {
+  width: 100%;
+  height: 220px;              /* altura fixa = cards alinhados */
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+/* Imagem */
+.event-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit:scale-down;          /* corta sem distorcer */
+}

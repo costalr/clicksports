@@ -1,0 +1,134 @@
+/* =========================
+   OVERLAY DO MENU MOBILE
+   ========================= */
+.mobile-menu-overlay {
+  /* Fixa o overlay sobre toda a tela */
+  position: fixed;
+
+  /* Atalho para top/right/bottom/left = 0 */
+  inset: 0;
+
+  /* Fundo escuro translúcido para
+     destacar o menu e bloquear o conteúdo */
+  background: rgba(0,0,0,0.6);
+
+  /* Garante que fique acima da navbar */
+  z-index: 2000;
+}
+
+/* =========================
+   CONTAINER DO MENU LATERAL
+   ========================= */
+.mobile-menu {
+  /* Largura relativa à tela */
+  width: 85%;
+
+  /* Limita largura máxima em telas maiores */
+  max-width: 320px;
+
+  /* Ocupa toda a altura da viewport */
+  height: 100%;
+
+  /* Cor de fundo do menu (modo escuro fixo) */
+  background: var(--bg-card);
+
+  /* Cor do texto */
+  color: var(--text-primary);
+
+  /* Espaçamento interno geral */
+  padding: 20px;
+}
+
+/* =========================
+   CABEÇALHO DO MENU
+   ========================= */
+.mobile-menu-header {
+  /* Alinha título e botão de fechar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Espaço abaixo do cabeçalho */
+  margin-bottom: 24px;
+}
+
+/* =========================
+   LINKS PRINCIPAIS DO MENU
+   ========================= */
+.mobile-menu-links a {
+  /* Cada link ocupa uma linha */
+  display: block;
+
+  /* Espaçamento vertical confortável para toque */
+  padding: 14px 0;
+
+  /* Tamanho do texto maior para mobile */
+  font-size: 1.1rem;
+
+  /* Linha divisória entre itens */
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+
+  /* Remove sublinhado padrão */
+  text-decoration: none;
+
+  /* Herda a cor do menu */
+  color: inherit;
+}
+
+.app.dark .mobile-menu-links a {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* =========================
+   RODAPÉ DO MENU
+   ========================= */
+.mobile-menu-footer {
+  /* Espaço acima do rodapé
+     separando das opções principais */
+  margin-top: 40px;
+}
+
+/* Links do rodapé (ações secundárias) */
+.mobile-menu-footer a {
+  display: block;
+
+  /* Espaçamento vertical menor */
+  padding: 10px 0;
+
+  /* Texto ligeiramente menor */
+  font-size: 0.95rem;
+
+  /* Opacidade reduzida para hierarquia visual */
+  opacity: 0.8;
+
+
+}
+
+/* BLOCO DO USUÁRIO */
+.mobile-menu-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.mobile-menu-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.mobile-menu-user strong {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.mobile-menu-user span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
