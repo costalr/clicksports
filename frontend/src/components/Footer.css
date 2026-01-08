@@ -1,0 +1,99 @@
+.footer {
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  margin-top: 80px;
+}
+
+.footer-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 56px 24px;
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 40px;
+}
+
+/* MARCA */
+.footer-brand p {
+  margin-top: 12px;
+  max-width: 360px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* LINKS */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.footer-links a:hover {
+  color: var(--text-primary);
+}
+
+/* REDES SOCIAIS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid currentColor;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* RODAPÉ INFERIOR */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 20px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.8rem;
+}
+
+.app.light .footer-bottom {
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* PLACEHOLDER DE PAGAMENTOS */
+.footer-payments {
+  display: flex;
+  gap: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,38 @@
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 3000;
+}
+
+.mobile-side-menu {
+  width: 80%;
+  max-width: 280px;
+  height: 100%;
+  background: var(--bg-card);
+  padding: 20px;
+  animation: slideIn 0.25s ease forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.menu-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-links {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
