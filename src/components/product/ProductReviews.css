@@ -1,0 +1,111 @@
+/* ===============================
+   PRODUCT REVIEWS – CONTAINER
+   =============================== */
+
+.product-reviews {
+  max-width: 1200px;
+  margin: 48px auto;
+  padding: 0 24px;
+
+  color: var(--text-primary);
+}
+
+/* ===============================
+   TITLE
+   =============================== */
+
+.product-reviews h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin: 0 0 24px 0;
+  padding-bottom: 12px;
+
+  border-bottom: 2px solid var(--gray-200);
+}
+
+/* ===============================
+   REVIEW CARD
+   =============================== */
+
+.review-card {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.review-card:last-child {
+  border-bottom: none;
+}
+
+/* ===============================
+   HEADER (AUTHOR + DATE)
+   =============================== */
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-header strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.review-date {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+/* ===============================
+   RATING
+   =============================== */
+
+.review-rating {
+  margin: 6px 0 8px 0;
+  font-size: 1rem;
+  color: #f5a623;
+}
+
+/* ===============================
+   COMMENT
+   =============================== */
+
+.review-comment {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+
+  margin: 0;
+}
+
+/* ===============================
+   EMPTY STATE
+   =============================== */
+
+.no-reviews {
+  max-width: 1200px;
+  margin: 48px auto;
+  padding: 0 24px;
+
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 768px) {
+  .product-reviews {
+    margin: 32px auto;
+  }
+
+  .product-reviews h3 {
+    font-size: 1.3rem;
+  }
+
+  .review-comment {
+    font-size: 0.95rem;
+  }
+}

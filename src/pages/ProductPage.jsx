@@ -25,9 +25,13 @@ export default function ProductPage() {
         <ProductInfo product={product} />
       </section>
 
-      {/* ABAIXO */}
+      {/* DESCRIÇÃO */}
       <ProductDescription description={product.description} />
+
+      {/* AVALIAÇÕES */}
       <ProductReviews reviews={product.reviews} />
+
+      {/* RELACIONADOS */}
       <RelatedProducts currentId={product.id} />
 
     </main>
